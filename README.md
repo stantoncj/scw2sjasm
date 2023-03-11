@@ -27,12 +27,14 @@ Instructions (for 1.3)
 ------------
 Install the [Requirements](#requirements-for-osx) below
 
-Download Source and Tools from here https://smallcomputercentral.com/small-computer-monitor-v1-3/\
-Unzip the directory as SCM\
-cd ./{SCW directory}/SCMonitor/Source\
-git clone https://github.com/stantoncj/scw2sjasm\
-cp scw2sjasm/* .\
-cp scw2sjasm/.vscode .\
+Download Source and Tools from here https://smallcomputercentral.com/small-computer-monitor-v1-3/  
+- Unzip the directory as SCM
+~~~~
+cd ./{SCW directory}/SCMonitor/Source
+git clone https://github.com/stantoncj/scw2sjasm
+cp scw2sjasm/* .
+cp scw2sjasm/.vscode .
+~~~~
 
 This repository must be inserted into the ./SCM/Source directory for SCMonitor (not at ./SCM!)\
 The SCM/App directory must be available as ../App from the Source directory to include any SCM apps, including BASIC and the CPM Loaders\
