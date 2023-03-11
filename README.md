@@ -11,6 +11,8 @@ As tempting as it was to just fire up SCW on Windows, I never actually did durin
 Released with under an Open Source [MIT License](https://github.com/stantoncj/scw2sjasm/blob/main/LICENSE.md)
 Please credit me (and Steve Cousins) in any derivatives
 
+Questions, Critiques or Accolades directed at me at [stantoncj@gmail.com](mailto: stantoncj@gmail.com)
+
 Features
 --------
 * Modifies all needed directives to allow build of [SCMonitor] to burnable copy
@@ -51,14 +53,14 @@ Requirements to run scw2sjasm: (for OSX)
 The process
 -----------
 To modify SCM code to compile under sjasmplus:
-.__./scw2sjasm.sh__
+__./scw2sjasm.sh__
 
 To build the binary:
-.__make__
+__make__
 
 Development tools: (not used in normal situations):
-.__./compare.sh__ - Compares a distributed build hex file with the sjasmplus built binary
-.__./restore.sh__ - Resets the entire Source directory to the distribution version
+__./compare.sh__ - Compares a distributed build hex file with the sjasmplus built binary
+__./restore.sh__ - Resets the entire Source directory to the distribution version
 
 To debug in an IDE, you need to install
 * [VSCode](https://code.visualstudio.com/docs/setup/mac) - Visual Studio Code
@@ -66,5 +68,5 @@ To debug in an IDE, you need to install
 * Configs in .vscode - See included examples
 * There are also some nice Z80 syntax highlighters you can find by poking around in the extensions
 
-Questions, Critiques or Accolades directed at me at [stantoncj@gmail.com](mailto: stantoncj@gmail.com)
+
 
