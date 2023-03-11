@@ -11,17 +11,17 @@ As tempting as it was to just fire up SCW on Windows, I never actually did durin
 Released with under an Open Source [MIT License](https://github.com/stantoncj/scw2sjasm/blob/main/LICENSE.md)
 Please credit me (and Steve Cousins) in any derivatives
 
-Questions, Critiques or Accolades directed at me at [stantoncj@gmail.com](mailto: stantoncj@gmail.com)
+Questions, Critiques or Accolades directed at me at stantoncj@gmail.com
 
 Features
 --------
-* Modifies all needed directives to allow build of [SCMonitor] to burnable copy
+* Modifies all needed directives to allow build of __SCMonitor__ to burnable copy
 * Builds to a binary equivalent file
 * Requires no manual modification to SCMonitor code
 * Runs on OSX (and probably other Linux, but untested)
-* Includes [make] file for SCMonitor
-* Generates debugger code for running in [Dezog]
-* Sample [.vscode] config for Build and Dezog
+* Includes __make__ file for SCMonitor
+* Generates debugger code for running in __DeZog__
+* Sample __.vscode__ config for Build and __DeZog__
 
 Instructions (for 1.3)
 ------------
@@ -51,16 +51,17 @@ Requirements to run scw2sjasm: (for OSX)
 * Install [sjasmplus](https://github.com/z00m128/sjasmplus/blob/master/INSTALL.md) (you may have to install other tools to have this make correctly)
 * Install __srec_cat__ - _brew install srecord_ (srec_cat is in the bundle of srecord tools)
 * Install __git__ - _brew install git_ (or use your choice of GUI git tools such as the excellent [GitKraken](https://www.gitkraken.com/))
-* If commands from Terminal refuse to run, you need to run from Finder once and then allow execution in Control Panel
-* You can hand run the build at this point and it should work
+* You should check all of these run on the command line (tested versions listed in scw2sjasm.awk)
+* If commands from Terminal refuse to run, you need to run from Finder once or allow execution in Control Panel
 
 The process
 -----------
-To modify SCM code to compile under sjasmplus: (this runs only once)
+To modify SCM code to compile under sjasmplus: (this runs only once)  
 __./scw2sjasm.sh__
 
-To build the binary:\
+To build the binary: (you can choose hex or bin in the makefile)  
 __make__
+
 
 scw2sjasm Development tools: (not used in normal situations):\
 __./compare.sh__ - Compares a distributed build hex file with the sjasmplus built binary\
@@ -69,8 +70,10 @@ __./restore.sh__ - Resets the entire Source directory to the distribution versio
 To debug in an IDE, you need to install
 * [VSCode](https://code.visualstudio.com/docs/setup/mac) - Visual Studio Code
 * [DeZog](https://github.com/maziac/DeZog/) - You can just install this from Visual Studio, look for DeZog
-* Configs in __.vscode__ - See included examples
-* There are also some nice Z80 syntax highlighters you can find by poking around in the extensions
+* Configs in __.vscode__ - See included examples  
+    -.vscode/tasks.json should do a build with make without mods (shift-command-B)  
+    -.vscode/launch.json should work to launch a DeZog debugger (shift-command-D)  
+* There are also some nice Z80 syntax highlighters (I use ASM Code Lens) you can find by poking around in the VSCode extensions
 
 
 
